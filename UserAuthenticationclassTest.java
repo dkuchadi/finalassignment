@@ -19,7 +19,7 @@ public class UserAuthenticationclassTest {
     @Test
     public void testAuthenticateUser() {
         // Test with valid username and password
-        boolean result = UserAuthenticationclass.authenticateUser("pratham@gmail.com", "pratham");
+        boolean result = UserAuthenticationclass.authenticateUser("deepu@gmail.com", "deepu");
         assertTrue(result);
 
         // Test with non-existing username
@@ -27,7 +27,7 @@ public class UserAuthenticationclassTest {
         assertFalse(result);
 
         // Test with incorrect password
-        result = UserAuthenticationclass.authenticateUser("pratham@gmail.com", "prathamz");
+        result = UserAuthenticationclass.authenticateUser("deepu@gmail.com", "deepz");
         assertFalse(result);
     }
 
@@ -38,14 +38,14 @@ public class UserAuthenticationclassTest {
         assertTrue(result);
 
         // Test registration with existing username
-        result = UserAuthenticationclass.registerUser("pratham@gmail.com", "pratham");
+        result = UserAuthenticationclass.registerUser("deepu@gmail.com", "deepu");
         assertFalse(result);
     }
 
     @Test
     public void testGetUserId() throws SQLException {
         // Test with existing username
-        int userId = UserAuthenticationclass.getUserId("pratham@gmail.com");
+        int userId = UserAuthenticationclass.getUserId("deepu@gmail.com");
         assertEquals(1, userId);
 
         // Test with non-existing username
