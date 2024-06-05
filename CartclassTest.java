@@ -32,7 +32,7 @@ public class CartclassTest {
     @Test
     @DisplayName("Continue Shopping function")
     public void testContinueShopping() throws SQLException {
-        String username = "pratham@gmail.com";
+        String username = "deepu@gmail.com";
         Scanner mockScanner = new Scanner(System.in);
         
         Cartclass.continueShopping(username, mockScanner);
@@ -83,7 +83,7 @@ public class CartclassTest {
     @DisplayName("Calculate cart value")
 
     public void testCalculateCartTotal() throws SQLException {
-        String username = "pratham@gmail.com";
+        String username = "deepu@gmail.com";
         
         BigDecimal expectedTotal = new BigDecimal("3000"); 
 
@@ -114,7 +114,7 @@ public class CartclassTest {
     
     @Test
     public void testDisplayCartOptions() throws SQLException {
-        String username = "pratham@gmail.com";
+        String username = "deepu@gmail.com";
         Scanner mockScanner = new Scanner(System.in); 
         
         Cartclass.displayCartOptions(username, mockScanner);
